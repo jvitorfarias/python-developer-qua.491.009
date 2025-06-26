@@ -7,4 +7,3 @@ result = "é maior de idade" if idade >= 18 else "é menor de idade."
 
 #saida
 print(f"{nome} {result}")
-
