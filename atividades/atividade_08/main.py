@@ -16,11 +16,13 @@ while True:
     match opcao:
         case "1":
             try:
-                novaNota = float(input("Insira a nova nota: ")).replace(",", ".")
-                if novaNota <= 0 and novaNota >= 10:
+                novaNota = float(input("Insira a nova nota: ").replace(",", "."))
+                if novaNota >= 0 and novaNota <= 10:
                     os.system("cls" if os.name == "nt" else "clear")
                     notas.append(novaNota)
                     print("Nota inserida com sucesso.")
+                else:
+                    print("Nota inválida.")
             except Exception as e:
                 print("Não foi possível inserir a nota. {e}.")
             finally:
@@ -42,4 +44,3 @@ while True:
         case _:
             print("Opção inválida")
             continue
-
