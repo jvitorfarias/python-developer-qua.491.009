@@ -1,0 +1,12 @@
+[
+    {
+        "nome" : "Pedro",
+        "idade" : "25",
+        "profissao" : "Desenvolvedor"
+    },
+
+    {
+        "carro" : "Vectra",
+        "motor" : "2.0 16v"
+    }
+]
