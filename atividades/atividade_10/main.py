@@ -36,6 +36,7 @@ while True:
 
     opcao = input("Informe a opção desejada: ")
     os.system("cls" if os.name == "nt" else "clear")
+
     match opcao:
         case "1":
             ...
@@ -52,5 +53,6 @@ while True:
         case "7":
             ...
         case "8":
-            ...
+            print("Programa encerrado com sucesso. ")
+            break
             
