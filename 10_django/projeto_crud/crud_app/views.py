@@ -1,6 +1,8 @@
-from django.http import HttpResponse
 from django.shortcuts import render
+from .models import Pessoa
 
 # Create your views here.
 def home(request):
-    return HttpResponse("Olá, Mundo Django!!!""")
+    pessoas = Pessoa.objects.all()
+
+    return render(request, "home.html", {"pessoas":pessoas})
